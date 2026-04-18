@@ -12,15 +12,15 @@ window.I18N = {
 
     // HERO
     heroBadge: "BETA · MVP v0.3.1",
-    heroStatus: "출시 준비 중 · 베타 테스터 운영",
+    heroStatus: "Android 출시 · iOS 준비 중",
     heroTitleLine1: "출퇴근길에 볼만한 썰,",
     heroTitleLine2: "한 앱에 모았습니다.",
     heroSubA: "디시·에펨·더쿠·인스티즈에서 새벽마다 크롤링한",
     heroSubB: "“살짝 야한” 썰만 골라내 하루 30~50개.",
     heroSubC: "커뮤니티 5개 돌아다니는 시간, 지하철 두 정거장으로.",
     heroCta: "앱 다운로드",
-    heroCtaSub: "iOS · Android · 완전 무료",
-    heroCtaNote: "스토어 등록 심사 중 · 베타 참여는 지금 가능",
+    heroCtaSub: "Android 출시 · iOS 준비 중 · 완전 무료",
+    heroCtaNote: "Google Play에서 지금 다운로드 가능",
     heroChipA: "✓ 가입 없이 실행",
     heroChipB: "✓ 광고 제로",
     heroChipC: "✓ 결제 페이지 자체가 없음",
@@ -135,7 +135,7 @@ window.I18N = {
     faq3A: "썰은 원문 링크·작성자 닉네임을 반드시 함께 노출합니다. 작성자 요청 시 24시간 안에 내립니다. 소설은 전부 자체 계약 작가의 오리지널이거나 정식 라이선스만 취급합니다.",
 
     faq4Q: "iOS / Android 둘 다 되나요?",
-    faq4A: "React Native 단일 코드베이스로 개발 중. 현재 Android TestFlight 대응 베타 배포, iOS는 App Store 심사 대기 중 (2026.5 예정).",
+    faq4A: "React Native 단일 코드베이스로 개발 중. Android는 Google Play에 출시되었습니다. iOS는 App Store 심사 대기 중 (2026.5 예정).",
 
     // FINAL CTA
     finalKicker: "05 — Install",
@@ -150,7 +150,9 @@ window.I18N = {
 
     btnAppStore: "App Store",
     btnGooglePlay: "Google Play",
-    btnStatus: "출시 준비 중",
+    btnGetOnGoogle: "GET IT ON",
+    btnStatusIos: "출시 준비 중",
+    btnStatusAndroid: "지금 다운로드",
 
     finalFoot: "완전 무료. 가입 없이 바로 시작.",
     finalFootSub: "문의: hello@koreapants.app",
@@ -176,15 +178,15 @@ window.I18N = {
     navDownload: "Get the app",
 
     heroBadge: "BETA · MVP v0.3.1",
-    heroStatus: "Pre-launch · beta testers only",
+    heroStatus: "Android live · iOS coming soon",
     heroTitleLine1: "The stuff worth reading",
     heroTitleLine2: "on your commute — in one app.",
     heroSubA: "Crawled nightly from DC, FMKorea, theqoo, instiz —",
     heroSubB: "only the quietly-spicy ones. 30~50 posts a day.",
     heroSubC: "What used to take 12 minutes, now fits in two subway stops.",
     heroCta: "Download app",
-    heroCtaSub: "iOS · Android · completely free",
-    heroCtaNote: "Store review in progress · beta access available now",
+    heroCtaSub: "Android live · iOS coming soon · completely free",
+    heroCtaNote: "Download now on Google Play",
     heroChipA: "✓ No sign-up",
     heroChipB: "✓ Zero ads",
     heroChipC: "✓ No payment screen exists",
@@ -290,7 +292,7 @@ window.I18N = {
     faq3A: "Every post links to the source with the original author's handle. We remove posts within 24h on request. Novels are either original from contracted authors or properly licensed.",
 
     faq4Q: "iOS / Android both supported?",
-    faq4A: "React Native, single codebase. Android beta via TestFlight equivalent now; iOS in App Store review (expected 2026.5).",
+    faq4A: "React Native, single codebase. Android is live on Google Play. iOS is in App Store review (expected 2026.5).",
 
     finalKicker: "05 — Install",
     finalTitle: "It's still early.\nThat's why it gets better fast.",
@@ -304,7 +306,9 @@ window.I18N = {
 
     btnAppStore: "App Store",
     btnGooglePlay: "Google Play",
-    btnStatus: "Launching soon",
+    btnGetOnGoogle: "GET IT ON",
+    btnStatusIos: "Coming soon",
+    btnStatusAndroid: "Download now",
 
     finalFoot: "Completely free. Start without signing up.",
     finalFootSub: "Contact: hello@koreapants.app",
@@ -328,15 +332,15 @@ window.I18N = {
     navDownload: "アプリを入手",
 
     heroBadge: "BETA · MVP v0.3.1",
-    heroStatus: "リリース準備中 · ベータ運用",
+    heroStatus: "Android リリース済み · iOS 準備中",
     heroTitleLine1: "通勤中に読めるネタを、",
     heroTitleLine2: "ひとつのアプリに。",
     heroSubA: "DC・FMKorea・theqoo・instizから毎朝クロール。",
     heroSubB: "「ちょっとだけ際どい」話だけを1日30〜50本。",
     heroSubC: "5つのコミュを巡る時間が、地下鉄2駅ぶんに。",
     heroCta: "アプリをダウンロード",
-    heroCtaSub: "iOS · Android · 完全無料",
-    heroCtaNote: "ストア審査中 · ベータは今すぐ参加可能",
+    heroCtaSub: "Android リリース済み · iOS 準備中 · 完全無料",
+    heroCtaNote: "Google Playで今すぐダウンロード可能",
     heroChipA: "✓ 登録不要",
     heroChipB: "✓ 広告ゼロ",
     heroChipC: "✓ 決済画面そのものが無い",
@@ -442,7 +446,7 @@ window.I18N = {
     faq3A: "ネタには原文リンクと投稿者ハンドルを必ず併記。投稿者の要望があれば24時間以内に削除します。小説は全て契約作家のオリジナル、または正式ライセンスのみ。",
 
     faq4Q: "iOS / Android 両方対応?",
-    faq4A: "React Nativeのシングルコードベース。Androidは現在ベータ配布中、iOSはApp Store審査待ち (2026.5予定)。",
+    faq4A: "React Nativeのシングルコードベース。AndroidはGoogle Playでリリース済み。iOSはApp Store審査待ち (2026.5予定)。",
 
     finalKicker: "05 — インストール",
     finalTitle: "まだ初期バージョンです。\nだからこそ、早く良くなります。",
@@ -456,7 +460,9 @@ window.I18N = {
 
     btnAppStore: "App Store",
     btnGooglePlay: "Google Play",
-    btnStatus: "リリース準備中",
+    btnGetOnGoogle: "GET IT ON",
+    btnStatusIos: "リリース準備中",
+    btnStatusAndroid: "今すぐダウンロード",
 
     finalFoot: "完全無料。登録なしで開始。",
     finalFootSub: "お問い合わせ: hello@koreapants.app",

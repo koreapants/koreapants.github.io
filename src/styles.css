@@ -848,22 +848,113 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 }
 
 .store-buttons { display: flex; gap: 12px; flex-wrap: wrap; }
-.store-btn {
-  display: inline-flex; align-items: center; gap: 12px;
-  padding: 18px 22px;
-  border: 1px solid rgba(250, 250, 248, 0.25);
-  border-radius: 14px;
-  color: rgba(250, 250, 248, 0.4);
-  cursor: not-allowed;
-  position: relative;
-  transition: all 0.2s;
-  min-width: 200px;
+
+/* ─── STORE BADGES (official style) ─── */
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 24px;
+  border-radius: 12px;
+  min-width: 190px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  cursor: pointer;
 }
-.store-btn:hover { border-color: rgba(250, 250, 248, 0.45); color: rgba(250, 250, 248, 0.7); }
-.store-btn .glyph { font-size: 22px; }
-.store-btn .label-col { display: flex; flex-direction: column; text-align: left; gap: 2px; }
-.store-btn .label-col small { font-family: var(--ff-mono); font-size: 10px; letter-spacing: 0.1em; color: var(--accent); }
-.store-btn .label-col b { font-weight: 700; font-size: 16px; letter-spacing: -0.01em; color: var(--bg); }
+.store-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px -8px rgba(0,0,0,0.25);
+}
+.store-badge.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.store-badge-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.store-badge-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1px;
+}
+.store-badge-text small {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.store-badge-text b {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+/* Google Play badge */
+.store-badge.google {
+  background: var(--ink);
+  color: var(--bg);
+  border: 1px solid var(--ink);
+}
+.store-badge.google .store-badge-icon { fill: var(--bg); }
+.store-badge.google .store-badge-text small { color: rgba(250,250,248,0.7); }
+.store-badge.google .store-badge-text b { color: var(--bg); }
+
+/* Apple badge */
+.store-badge.apple {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink-30);
+}
+.store-badge.apple .store-badge-icon { fill: var(--ink); }
+.store-badge.apple .store-badge-text small { color: var(--ink-50); }
+.store-badge.apple .store-badge-text b { color: var(--ink); }
+
+/* On dark backgrounds (final CTA) */
+.store-badge.on-dark.google {
+  background: #fff;
+  border-color: #fff;
+}
+.store-badge.on-dark.google .store-badge-icon { fill: #0A0A0A; }
+.store-badge.on-dark.google .store-badge-text small { color: rgba(10,10,10,0.6); }
+.store-badge.on-dark.google .store-badge-text b { color: #0A0A0A; }
+
+.store-badge.on-dark.apple {
+  background: transparent;
+  border-color: rgba(250,250,248,0.3);
+}
+.store-badge.on-dark.apple .store-badge-icon { fill: rgba(250,250,248,0.5); }
+.store-badge.on-dark.apple .store-badge-text small { color: rgba(250,250,248,0.4); }
+.store-badge.on-dark.apple .store-badge-text b { color: rgba(250,250,248,0.5); }
+
+/* Hero store wrap */
+.hero-store-wrap {
+  margin-top: 40px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .store-badge.google {
+  background: #fff;
+  border-color: #fff;
+}
+[data-theme="dark"] .store-badge.google .store-badge-icon { fill: #0A0A0A; }
+[data-theme="dark"] .store-badge.google .store-badge-text small { color: rgba(10,10,10,0.6); }
+[data-theme="dark"] .store-badge.google .store-badge-text b { color: #0A0A0A; }
+
+[data-theme="dark"] .store-badge.apple {
+  border-color: rgba(244,244,242,0.25);
+}
+[data-theme="dark"] .store-badge.apple .store-badge-icon { fill: var(--ink); }
+[data-theme="dark"] .store-badge.apple .store-badge-text small { color: var(--ink-50); }
+[data-theme="dark"] .store-badge.apple .store-badge-text b { color: var(--ink); }
 
 .final-foot {
   margin-top: 32px;
@@ -979,6 +1070,10 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   .service-phone { max-width: 280px; }
   .final-inner { grid-template-columns: 1fr; gap: 48px; }
   .final { padding: 80px 0; }
+  .hero-store-wrap { flex-direction: column; }
+  .hero-store-wrap .store-badge { width: 100%; max-width: 260px; justify-content: center; }
+  .store-buttons { flex-direction: column; }
+  .store-buttons .store-badge { width: 100%; max-width: 260px; justify-content: center; }
   .testi-card { flex: 0 0 calc(100% - 40px); min-height: auto; }
 
   .nav-links { display: none; }
