@@ -1,5 +1,6 @@
 // Page event tracker — Supabase
 (function () {
+  var ENABLED = true;
   var SUPABASE_URL = 'https://iswwjhrmswcxbpctgzyj.supabase.co';
   var SUPABASE_KEY = 'sb_publishable_m5c_aT_bw-HECc__kgkeqQ_V0-MOtLH';
   var SITE = 'koreapant';
@@ -21,6 +22,12 @@
       referrer: document.referrer || null,
       user_agent: navigator.userAgent || null,
     }).then();
+  }
+
+  // 수집 비활성화 사이트는 클라이언트 생성 없이 종료
+  if (!ENABLED) {
+    window.trackEvent = function () {};
+    return;
   }
 
   waitForSupabase(function () {
